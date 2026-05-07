@@ -16,7 +16,6 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '984800100713319');
     fbq('track', 'PageView');
-    fbq('track', 'ViewContent', {content_name: 'Linktree Encantare'}); // Evento extra para aquecer o pixel
     </script>
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=984800100713319&ev=PageView&noscript=1"/>
@@ -88,6 +87,7 @@
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: 0.3s;
+            cursor: pointer;
         }
 
         .card:hover{
@@ -115,6 +115,7 @@
         .arrow{ font-size: 28px; color: #f0c9a4; opacity: 0.7; }
         .footer{ margin-top: 20px; color: rgba(255, 255, 255, 0.3); font-size: 12px; }
 
+        /* Ajustes para Mobile - Remove o vácuo e alinha ao topo */
         @media (max-width: 480px){
             body { align-items: flex-start; padding: 40px 15px; }
             .container { padding: 30px 20px; border-radius: 28px; }
@@ -136,9 +137,7 @@
         Fale com uma de nossas consultoras.
     </div>
 
-    <a class="card" href="https://facilzap.app.br/eNCANTARE/link/whatsapp" 
-       onclick="fbq('track', 'Lead'); fbq('track', 'Contact');" 
-       target="_blank">
+    <a class="card" onclick="enviarEventoECatalogo()">
         <div class="left">
             <div class="icon-box">
                 <svg class="icon" viewBox="0 0 32 32">
@@ -173,6 +172,21 @@
 
     <div class="footer">Encantare Lingerie ©</div>
 </div>
+
+<script>
+function enviarEventoECatalogo() {
+    // 1. Envia os eventos para a Meta (Lead e Contact)
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+        fbq('track', 'Contact');
+    }
+
+    // 2. Pequeno delay de 150ms para garantir que a Meta receba o sinal antes de abrir o WhatsApp
+    setTimeout(function() {
+        window.open("https://facilzap.app.br/eNCANTARE/link/whatsapp", "_blank");
+    }, 150);
+}
+</script>
 
 </body>
 </html>
