@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Encantare Lingerie</title>
 
-    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,6 +16,7 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '984800100713319');
     fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {content_name: 'Linktree Encantare'}); // Evento extra para aquecer o pixel
     </script>
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=984800100713319&ev=PageView&noscript=1"/>
@@ -39,7 +39,6 @@
             background: linear-gradient(180deg, #4d2514 0%, #2a140d 45%, #140906 100%);
         }
 
-        /* Efeito de brilho de fundo */
         body::after{
             content: "";
             position: absolute;
@@ -57,7 +56,7 @@
             position: relative;
             z-index: 2;
             width: 100%;
-            max-width: 500px; /* Reduzi para ficar mais elegante */
+            max-width: 500px;
             padding: 40px 25px;
             border-radius: 34px;
             background: rgba(255, 255, 255, 0.05);
@@ -110,27 +109,15 @@
         }
 
         .icon{ width: 28px; height: 28px; }
-
         .texts{ text-align: left; }
-
         .title{ color: #f7e7d6; font-size: 18px; font-weight: 500; }
-
         .sub{ margin-top: 4px; color: rgba(255, 255, 255, 0.5); font-size: 11px; letter-spacing: 1px; }
-
         .arrow{ font-size: 28px; color: #f0c9a4; opacity: 0.7; }
-
         .footer{ margin-top: 20px; color: rgba(255, 255, 255, 0.3); font-size: 12px; }
 
-        /* AJUSTES MOBILE */
         @media (max-width: 480px){
-            body {
-                align-items: flex-start; /* Alinha no topo para não flutuar */
-                padding: 40px 15px;
-            }
-            .container {
-                padding: 30px 20px;
-                border-radius: 28px;
-            }
+            body { align-items: flex-start; padding: 40px 15px; }
+            .container { padding: 30px 20px; border-radius: 28px; }
             .logo { width: 110px; }
             .title { font-size: 16px; }
             .card { min-height: 80px; margin-bottom: 12px; }
@@ -149,8 +136,9 @@
         Fale com uma de nossas consultoras.
     </div>
 
-    <!-- whatsapp -->
-    <a class="card" href="https://facilzap.app.br/eNCANTARE/link/whatsapp" onclick="fbq('track','Lead')" target="_blank">
+    <a class="card" href="https://facilzap.app.br/eNCANTARE/link/whatsapp" 
+       onclick="fbq('track', 'Lead'); fbq('track', 'Contact');" 
+       target="_blank">
         <div class="left">
             <div class="icon-box">
                 <svg class="icon" viewBox="0 0 32 32">
@@ -159,14 +147,13 @@
                 </svg>
             </div>
             <div class="texts">
-                <div class="title">Consultoras</div>
-                <div class="sub">WHATSAPP</div>
+                <div class="title">Solicitar Catálogo</div>
+                <div class="sub">FALAR COM CONSULTORA</div>
             </div>
         </div>
         <div class="arrow">›</div>
     </a>
 
-    <!-- instagram -->
     <a class="card" href="https://instagram.com/encantare.lingerie" target="_blank">
         <div class="left">
             <div class="icon-box">
