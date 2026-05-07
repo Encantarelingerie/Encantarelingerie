@@ -21,113 +21,121 @@
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=984800100713319&ev=PageView&noscript=1"/>
     </noscript>
-    <!-- End Meta Pixel Code -->
 
-    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         *{ margin:0; padding:0; box-sizing:border-box; }
+        
         body{
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:30px;
-            overflow-x:hidden;
-            font-family:'Montserrat', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+            font-family: 'Montserrat', sans-serif;
             background: linear-gradient(180deg, #4d2514 0%, #2a140d 45%, #140906 100%);
-            position:relative;
         }
-        body::before{
-            content:"";
-            position:absolute;
-            inset:0;
-            background: repeating-linear-gradient(90deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 2px, transparent 2px, transparent 18px);
-            opacity:0.5;
-            pointer-events: none;
-        }
+
+        /* Efeito de brilho de fundo */
         body::after{
-            content:"";
-            position:absolute;
-            width:900px;
-            height:900px;
-            border-radius:50%;
-            background: radial-gradient(circle, rgba(255,180,120,0.18) 0%, rgba(255,120,60,0.08) 30%, transparent 70%);
-            filter:blur(70px);
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 60%;
+            top: 20%;
+            left: 10%;
+            background: radial-gradient(circle, rgba(255,180,120,0.15) 0%, transparent 70%);
+            filter: blur(60px);
             z-index: 1;
             pointer-events: none;
         }
-        .container{
-            position:relative;
-            z-index:2;
-            width:100%;
-            max-width:760px;
-            padding:42px 36px;
-            border-radius:34px;
-            background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-            backdrop-filter:blur(22px);
-            border:1px solid rgba(255,255,255,0.08);
-            box-shadow: 0 25px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
-            text-align:center;
-        }
-        .logo{ width:150px; margin-bottom:26px; }
-        .desc{ color:rgba(255,255,255,0.76); font-size:17px; line-height:1.7; margin-bottom:34px; }
-        .card{
-            width:100%;
-            min-height:102px;
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            padding:0 30px;
-            border-radius:30px;
-            text-decoration:none;
-            margin-bottom:22px;
-            background: linear-gradient(145deg, rgba(0,0,0,0.18), rgba(255,255,255,0.04));
-            border:1px solid rgba(255,255,255,0.08);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 10px 30px rgba(0,0,0,0.18);
-            transition:0.28s;
-        }
-        .card:hover{
-            transform:translateY(-5px);
-            border-color:rgba(255,220,180,0.22);
-            box-shadow: 0 18px 40px rgba(0,0,0,0.3), 0 0 25px rgba(255,170,100,0.08);
-        }
-        .left{ display:flex; align-items:center; gap:22px; }
-        .icon-box{
-            width:72px;
-            height:72px;
-            border-radius:24px;
-            background: linear-gradient(145deg, rgba(255,220,180,0.12), rgba(255,255,255,0.03));
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 0 20px rgba(255,170,100,0.08);
-        }
-        .icon{ width:34px; height:34px; }
-        .texts{ text-align:left; }
-        .title{ color:#f7e7d6; font-size:27px; letter-spacing:1px; font-weight:500; }
-        .sub{ margin-top:7px; color:rgba(255,255,255,0.58); font-size:14px; letter-spacing:2px; }
-        .arrow{ font-size:52px; color:#f0c9a4; opacity:0.75; }
-        .features{ margin-top:34px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
-        .feature{ flex:1; min-width:180px; padding:18px; border-right:1px solid rgba(255,255,255,0.08); color:#f1d5ba; font-size:13px; }
-        .feature:last-child{ border-right:none; }
-        .footer{ margin-top:30px; color:rgba(255,255,255,0.42); font-size:13px; }
 
-        @media (max-width:768px){
-            body{ padding:18px; overflow:auto; }
-            .container{ padding:28px 18px; border-radius:26px; }
-            .logo{ width:110px; margin-bottom:18px; }
-            .desc{ font-size:14px; margin-bottom:24px; }
-            .card{ min-height:82px; padding:0 16px; border-radius:22px; }
-            .icon-box{ width:52px; height:52px; border-radius:16px; }
-            .icon{ width:24px; height:24px; }
-            .title{ font-size:17px; }
-            .sub{ font-size:11px; letter-spacing:1px; }
-            .arrow{ font-size:32px; }
-            .features{ display:none; }
-            .footer{ margin-top:20px; font-size:11px; }
+        .container{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 500px; /* Reduzi para ficar mais elegante */
+            padding: 40px 25px;
+            border-radius: 34px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .logo{ width: 130px; margin-bottom: 20px; }
+
+        .desc{ 
+            color: rgba(255, 255, 255, 0.8); 
+            font-size: 16px; 
+            line-height: 1.5; 
+            margin-bottom: 30px; 
+        }
+
+        .card{
+            width: 100%;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            border-radius: 24px;
+            text-decoration: none;
+            margin-bottom: 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 220, 180, 0.3);
+        }
+
+        .left{ display: flex; align-items: center; gap: 15px; }
+
+        .icon-box{
+            width: 55px;
+            height: 55px;
+            border-radius: 18px;
+            background: rgba(255, 220, 180, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon{ width: 28px; height: 28px; }
+
+        .texts{ text-align: left; }
+
+        .title{ color: #f7e7d6; font-size: 18px; font-weight: 500; }
+
+        .sub{ margin-top: 4px; color: rgba(255, 255, 255, 0.5); font-size: 11px; letter-spacing: 1px; }
+
+        .arrow{ font-size: 28px; color: #f0c9a4; opacity: 0.7; }
+
+        .footer{ margin-top: 20px; color: rgba(255, 255, 255, 0.3); font-size: 12px; }
+
+        /* AJUSTES MOBILE */
+        @media (max-width: 480px){
+            body {
+                align-items: flex-start; /* Alinha no topo para não flutuar */
+                padding: 40px 15px;
+            }
+            .container {
+                padding: 30px 20px;
+                border-radius: 28px;
+            }
+            .logo { width: 110px; }
+            .title { font-size: 16px; }
+            .card { min-height: 80px; margin-bottom: 12px; }
+            .icon-box { width: 48px; height: 48px; border-radius: 14px; }
+            .icon { width: 22px; height: 22px; }
         }
     </style>
 </head>
@@ -142,7 +150,7 @@
     </div>
 
     <!-- whatsapp -->
-    <a class="card" href="https://facilzap.app.br/eNCANTARE/link/whatsapp" onclick="fbq('track','Lead')" target="_blank" aria-label="Falar com consultora via WhatsApp">
+    <a class="card" href="https://facilzap.app.br/eNCANTARE/link/whatsapp" onclick="fbq('track','Lead')" target="_blank">
         <div class="left">
             <div class="icon-box">
                 <svg class="icon" viewBox="0 0 32 32">
@@ -151,15 +159,15 @@
                 </svg>
             </div>
             <div class="texts">
-                <div class="title">Falar com uma consultora</div>
-                <div class="sub">ATENDIMENTO VIA WHATSAPP</div>
+                <div class="title">Consultora</div>
+                <div class="sub">WHATSAPP</div>
             </div>
         </div>
         <div class="arrow">›</div>
     </a>
 
     <!-- instagram -->
-    <a class="card" href="https://instagram.com/encantare.lingerie" target="_blank" aria-label="Siga-nos no Instagram">
+    <a class="card" href="https://instagram.com/encantare.lingerie" target="_blank">
         <div class="left">
             <div class="icon-box">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#f5d7ba" stroke-width="2">
@@ -169,18 +177,12 @@
                 </svg>
             </div>
             <div class="texts">
-                <div class="title">@encantare.lingerie</div>
-                <div class="sub">SIGA NOSSO INSTAGRAM</div>
+                <div class="title">Instagram</div>
+                <div class="sub">@ENCANTARE.LINGERIE</div>
             </div>
         </div>
         <div class="arrow">›</div>
     </a>
-
-    <div class="features">
-        <div class="feature">✦ TECIDO PREMIUM</div>
-        <div class="feature">✦ COMPRA SEGURA</div>
-        <div class="feature">✦ ENVIO RÁPIDO</div>
-    </div>
 
     <div class="footer">Encantare Lingerie ©</div>
 </div>
