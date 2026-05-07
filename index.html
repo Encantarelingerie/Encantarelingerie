@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Encantare Lingerie</title>
 
-    <!-- META PIXEL -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -13,24 +13,22 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}
-    (window, document,'script',
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_AQUI');
+    fbq('init', '984800100713319');
     fbq('track', 'PageView');
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=984800100713319&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
+        *{ margin:0; padding:0; box-sizing:border-box; }
         body{
             min-height:100vh;
             display:flex;
@@ -42,7 +40,6 @@
             background: linear-gradient(180deg, #4d2514 0%, #2a140d 45%, #140906 100%);
             position:relative;
         }
-
         body::before{
             content:"";
             position:absolute;
@@ -51,7 +48,6 @@
             opacity:0.5;
             pointer-events: none;
         }
-
         body::after{
             content:"";
             position:absolute;
@@ -63,7 +59,6 @@
             z-index: 1;
             pointer-events: none;
         }
-
         .container{
             position:relative;
             z-index:2;
@@ -77,19 +72,8 @@
             box-shadow: 0 25px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
             text-align:center;
         }
-
-        .logo{
-            width:150px;
-            margin-bottom:26px;
-        }
-
-        .desc{
-            color:rgba(255,255,255,0.76);
-            font-size:17px;
-            line-height:1.7;
-            margin-bottom:34px;
-        }
-
+        .logo{ width:150px; margin-bottom:26px; }
+        .desc{ color:rgba(255,255,255,0.76); font-size:17px; line-height:1.7; margin-bottom:34px; }
         .card{
             width:100%;
             min-height:102px;
@@ -105,19 +89,12 @@
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 10px 30px rgba(0,0,0,0.18);
             transition:0.28s;
         }
-
         .card:hover{
             transform:translateY(-5px);
             border-color:rgba(255,220,180,0.22);
             box-shadow: 0 18px 40px rgba(0,0,0,0.3), 0 0 25px rgba(255,170,100,0.08);
         }
-
-        .left{
-            display:flex;
-            align-items:center;
-            gap:22px;
-        }
-
+        .left{ display:flex; align-items:center; gap:22px; }
         .icon-box{
             width:72px;
             height:72px;
@@ -128,127 +105,37 @@
             align-items:center;
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 0 20px rgba(255,170,100,0.08);
         }
-
-        .icon{
-            width:34px;
-            height:34px;
-            stroke:#f5d7ba;
-            fill:none;
-            stroke-width:2;
-            stroke-linecap:round;
-            stroke-linejoin:round;
-        }
-
-        .texts{
-            text-align:left;
-        }
-
-        .title{
-            color:#f7e7d6;
-            font-size:27px;
-            letter-spacing:1px;
-            font-weight:500;
-        }
-
-        .sub{
-            margin-top:7px;
-            color:rgba(255,255,255,0.58);
-            font-size:14px;
-            letter-spacing:2px;
-        }
-
-        .arrow{
-            font-size:52px;
-            color:#f0c9a4;
-            opacity:0.75;
-        }
-
-        .features{
-            margin-top:34px;
-            display:flex;
-            justify-content:space-between;
-            gap:20px;
-            flex-wrap:wrap;
-        }
-
-        .feature{
-            flex:1;
-            min-width:180px;
-            padding:18px;
-            border-right:1px solid rgba(255,255,255,0.08);
-            color:#f1d5ba;
-            font-size:13px;
-        }
-
-        .feature:last-child{
-            border-right:none;
-        }
-
-        .footer{
-            margin-top:30px;
-            color:rgba(255,255,255,0.42);
-            font-size:13px;
-        }
+        .icon{ width:34px; height:34px; }
+        .texts{ text-align:left; }
+        .title{ color:#f7e7d6; font-size:27px; letter-spacing:1px; font-weight:500; }
+        .sub{ margin-top:7px; color:rgba(255,255,255,0.58); font-size:14px; letter-spacing:2px; }
+        .arrow{ font-size:52px; color:#f0c9a4; opacity:0.75; }
+        .features{ margin-top:34px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+        .feature{ flex:1; min-width:180px; padding:18px; border-right:1px solid rgba(255,255,255,0.08); color:#f1d5ba; font-size:13px; }
+        .feature:last-child{ border-right:none; }
+        .footer{ margin-top:30px; color:rgba(255,255,255,0.42); font-size:13px; }
 
         @media (max-width:768px){
-            body{
-                padding:18px;
-                overflow:auto;
-            }
-            .container{
-                padding:28px 18px;
-                border-radius:26px;
-            }
-            .logo{
-                width:110px;
-                margin-bottom:18px;
-            }
-            .desc{
-                font-size:14px;
-                margin-bottom:24px;
-            }
-            .card{
-                min-height:82px;
-                padding:0 16px;
-                border-radius:22px;
-            }
-            .icon-box{
-                width:52px;
-                height:52px;
-                border-radius:16px;
-            }
-            .icon{
-                width:24px;
-                height:24px;
-            }
-            .title{
-                font-size:17px;
-            }
-            .sub{
-                font-size:11px;
-                letter-spacing:1px;
-            }
-            .arrow{
-                font-size:32px;
-            }
-            .features{
-                display:none;
-            }
-            .footer{
-                margin-top:20px;
-                font-size:11px;
-            }
+            body{ padding:18px; overflow:auto; }
+            .container{ padding:28px 18px; border-radius:26px; }
+            .logo{ width:110px; margin-bottom:18px; }
+            .desc{ font-size:14px; margin-bottom:24px; }
+            .card{ min-height:82px; padding:0 16px; border-radius:22px; }
+            .icon-box{ width:52px; height:52px; border-radius:16px; }
+            .icon{ width:24px; height:24px; }
+            .title{ font-size:17px; }
+            .sub{ font-size:11px; letter-spacing:1px; }
+            .arrow{ font-size:32px; }
+            .features{ display:none; }
+            .footer{ margin-top:20px; font-size:11px; }
         }
     </style>
 </head>
-
 <body>
 
 <div class="container">
-    <!-- logo -->
     <img class="logo" src="https://i.ibb.co/6cKmbD41/LOGO1x1.png" alt="Encantare Logo">
 
-    <!-- descrição -->
     <div class="desc">
         Conforto, elegância e autoestima.<br>
         Fale com uma de nossas consultoras.
@@ -259,8 +146,8 @@
         <div class="left">
             <div class="icon-box">
                 <svg class="icon" viewBox="0 0 32 32">
-                    <path fill="#f5d7ba" stroke="none" d="M16.01 3.2c-7.08 0-12.8 5.72-12.8 12.8 0 2.26.59 4.38 1.62 6.23L3 29l6.97-1.82a12.75 12.75 0 0 0 6.04 1.53h.01c7.07 0 12.79-5.72 12.79-12.8 0-3.43-1.34-6.65-3.77-9.08A12.73 12.73 0 0 0 16.01 3.2zm0 23.32h-.01a10.6 10.6 0 0 1-5.39-1.48l-.39-.23-4.14 1.08 1.1-4.03-.25-.41a10.56 10.56 0 1 1 9.08 5.07z"/>
-                    <path fill="#f5d7ba" stroke="none" transform="translate(1.8, 1.4)" d="M19.11 17.21c-.30-.14-1.71-.84-1.98-.94-.27-.1-.47-.14-.67.14-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.08-.29-.14-1.22-.45-2.32-1.43-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.14-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.19 0-.51.07-.77.36-.27.29-1.01.98-1.01 2.39 0 1.41 1.03 2.77 1.18 2.96.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.61.69.22 1.31.19 1.81.11.55-.08 1.71-.7 1.95-1.38.24-.67.24-1.24.17-1.38-.07-.13-.27-.22-.56-.36z"/>
+                    <path fill="#f5d7ba" d="M16.01 3.2c-7.08 0-12.8 5.72-12.8 12.8 0 2.26.59 4.38 1.62 6.23L3 29l6.97-1.82a12.75 12.75 0 0 0 6.04 1.53h.01c7.07 0 12.79-5.72 12.79-12.8 0-3.43-1.34-6.65-3.77-9.08A12.73 12.73 0 0 0 16.01 3.2zm0 23.32h-.01a10.6 10.6 0 0 1-5.39-1.48l-.39-.23-4.14 1.08 1.1-4.03-.25-.41a10.56 10.56 0 1 1 9.08 5.07z"/>
+                    <path fill="#f5d7ba" transform="translate(1.8, 1.4)" d="M19.11 17.21c-.30-.14-1.71-.84-1.98-.94-.27-.1-.47-.14-.67.14-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.08-.29-.14-1.22-.45-2.32-1.43-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.14-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.19 0-.51.07-.77.36-.27.29-1.01.98-1.01 2.39 0 1.41 1.03 2.77 1.18 2.96.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.61.69.22 1.31.19 1.81.11.55-.08 1.71-.7 1.95-1.38.24-.67.24-1.24.17-1.38-.07-.13-.27-.22-.56-.36z"/>
                 </svg>
             </div>
             <div class="texts">
@@ -275,10 +162,10 @@
     <a class="card" href="https://instagram.com/encantare.lingerie" target="_blank" aria-label="Siga-nos no Instagram">
         <div class="left">
             <div class="icon-box">
-                <svg class="icon" viewBox="0 0 24 24">
-                    <rect x="3" y="3" width="18" height="18" rx="5" stroke="#f5d7ba" stroke-width="2" fill="none"/>
-                    <circle cx="12" cy="12" r="4" stroke="#f5d7ba" stroke-width="2" fill="none"/>
-                    <circle cx="17.5" cy="6.5" r="1" fill="#f5d7ba"/>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#f5d7ba" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="#f5d7ba" stroke="none"/>
                 </svg>
             </div>
             <div class="texts">
@@ -289,14 +176,12 @@
         <div class="arrow">›</div>
     </a>
 
-    <!-- features -->
     <div class="features">
         <div class="feature">✦ TECIDO PREMIUM</div>
         <div class="feature">✦ COMPRA SEGURA</div>
         <div class="feature">✦ ENVIO RÁPIDO</div>
     </div>
 
-    <!-- footer -->
     <div class="footer">Encantare Lingerie ©</div>
 </div>
 
